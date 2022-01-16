@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="https://rickandmortyapi.com/about">Sobre</a></li>
+                    <li class="box-logo">
+                        <a href="https://rickandmortyapi.com/">
+                            <img class="logo" src="./img/logo.svg" alt="Logo Rick and Morty" />
+                        </a>
+                    </li>
+                    <li><a href="https://rickandmortyapi.com/documentation">Doc</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Seção de Chamada -->
+    <section class="introducao">
+        <h1>Conheça os personagens de Rick And Morty</h1>
+    </section>
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="container personagens">
+            <h2>Na descrição dos personagens abaixo, você saberá seus nomes, espécie e se estão vivos ou mortos. Divirta-se!</h2>
+            <!-- Personagem 1 -->
+            <div class="box-persona">
+                <figure>
+                    <img id="image" src="./img/banner.svg" alt="">
+                </figure>
+                <h2 id="personNom">Nome</h2>
+                <h2 id="personEsp">Espécie</h2>
+                <h2 id="personCond">Vivo ou Morto?</h2>
+            </div>
+            <!-- Personagem 2 -->
+            <div class="box-persona">
+                <figure>
+                    <img id="image2" src="./img/banner.svg" alt="">
+                </figure>
+                <h2 id="personDoisNom">Nome</h2>
+                <h2 id="personDoisEsp">Espécie</h2>
+                <h2 id="personDoisCond">Vivo ou Morto?</h2>
+            </div>
+            <!-- Personagem 3 -->
+            <div class="box-persona">
+                <figure>
+                    <img id="image3" src="./img/banner.svg" alt="">
+                </figure>
+                <h2 id="personTresNom">Nome</h2>
+                <h2 id="personTresEsp">Espécie</h2>
+                <h2 id="personTresCond">Condição</h2>
+            </div>
+        </section>
+    </main>
+    <div class="container box-btn">
+        <button type="submit" class="btn" onClick="refreshPage()">Atualizar personagens</button>
+    </div>  
+</body>
+</html>
