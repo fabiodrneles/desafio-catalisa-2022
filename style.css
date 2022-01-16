@@ -1,0 +1,201 @@
+@import "variaveis.css";
+/* Estilos Gerais */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+}
+.logo {
+  width: 80px;
+  height: 100px;
+}
+.btn {
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: var(--secondary-color);
+  background-color: var(--menu-txt-color);
+  border: 3px solid var(--secondary-color);
+  border-radius: 10px;
+  padding: 25px;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  margin-bottom: var(--space);
+}
+.btn:hover {
+  color: var(--main-txt-color);
+  background-color: var(--secondary-color);
+}
+/* Body */
+body {
+  background-color: var(--bg-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: auto;
+}
+.container nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container nav ul li a {
+  display: inline-block;
+  padding: 3px;
+  font-size: 20px;
+  color: var(--menu-txt-color);
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  transition: 0.6s;
+}
+.container nav ul li a:hover:not(.box-logo a) {
+  font-size: 20px;
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--border-color);
+}
+/* Principal */
+.introducao {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-image: url("./../img/banner.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.introducao h1 {
+  text-transform: capitalize;
+  font-size: 50px;
+  color: var(--menu-txt-color);
+}
+main {
+  display: flex;
+  background-color: var(--bg-color);
+  color: var(--main-txt-color);
+}
+.personagens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--space);
+}
+.box-persona {
+  text-align: center;
+  width: 240px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 3px;
+  margin-top: 5%;
+}
+.box-persona img {
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.box-persona h2 {
+  font-size: 14px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+/* Telefones */
+@media (max-width: 480px) {
+  /* Cabeçalho */
+  .box-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    width: 240px;
+    margin: var(--space) 0px;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+  }
+  .container {
+    max-width: 480px;
+    width: 90%;
+    margin: auto;
+  }
+  /* Principal */
+  .introducao {
+    height: 120px;
+  }
+  .introducao h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .box-persona {
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 3px;
+    margin-top: 5%;
+  }
+}
+/* Tablet em retrato, paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Cabeçalho */
+  .box-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    max-width: 979px;
+    width: 85%;
+    margin: var(--space) 0;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+  }
+  .container {
+    max-width: 979px;
+    width: 90%;
+    margin: auto;
+  }
+  /* Principal */
+  .introducao {
+    height: 120px;
+  }
+  .introducao h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .box-persona {
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 3px;
+    margin-top: 5%;
+  }
+}
